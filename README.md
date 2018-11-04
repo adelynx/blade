@@ -1,7 +1,7 @@
 # The Standalone Laravel Blade
 The standalone version of [Laravel's Blade templating engine](https://laravel.com/docs/5.7/blade) for use outside of Laravel 5.7.
 
-### Installation
+## Installation
 ----------------
 The package can be installed via Composer by typing this command in your terminal or console:
 
@@ -9,12 +9,28 @@ The package can be installed via Composer by typing this command in your termina
 composer require adelynx/blade
 ```
 
-##Usage
--------
+## Usage
+--------
 
 Create a Blade instance by passing it the folder(s) where your view files are located, and a cache folder. Render a template by calling the `make` method. More information about the Blade templating engine can be found on https://laravel.com/docs/5.7/blade.
 
 ```php
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader
+| for our application. We just need to utilize it! We'll require it
+| into the script here so that we do not have to worry about the
+| loading of any our classes "manually". Feels great to relax.
+|
+*/
+
+require 'vendor/autoload.php';
+
 use Adelynx\Blade\Blade;
 
 $blade = new Blade('views', 'cache');
