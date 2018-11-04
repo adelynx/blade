@@ -15,6 +15,22 @@ composer require adelynx/blade
 Create a Blade instance by passing it the folder(s) where your view files are located, and a cache folder. Render a template by calling the `make` method. More information about the Blade templating engine can be found on https://laravel.com/docs/5.7/blade.
 
 ```php
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader
+| for our application. We just need to utilize it! We'll require it
+| into the script here so that we do not have to worry about the
+| loading of any our classes "manually". Feels great to relax.
+|
+*/
+
+require 'vendor/autoload.php';
+
 use Adelynx\Blade\Blade;
 
 $blade = new Blade('views', 'cache');
