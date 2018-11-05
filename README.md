@@ -9,7 +9,7 @@ The package can be installed via Composer by typing this command in your termina
 composer require adelynx/blade
 ```
 
-##Usage
+# Usage
 -------
 
 Create a Blade instance by passing it the folder(s) where your view files are located, and a cache folder. Render a template by calling the `make` method. More information about the Blade templating engine can be found on https://laravel.com/docs/5.7/blade.
