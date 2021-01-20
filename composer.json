@@ -1,6 +1,6 @@
 {
     "name": "adelynx/blade",
-    "description": "The standalone version of Laravel's Blade templating engine for use outside of Laravel 5.7.*",
+    "description": "The standalone version of Laravel's Blade templating engine for use outside of Laravel 8.*",
     "keywords": ["laravel", "blade", "template", "view", "render"],
     "license" : "MIT",
     "authors": [
